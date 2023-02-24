@@ -22,6 +22,6 @@ public class Account {
         return b;
     }
     public void showInfo(){
-        System.out.println("In "+name+" account, there is a balance equal to "+balance+" baht");
+        System.out.println("In "+name+" account, there is a balance equal to "+balance+" baht.");
     }
 }
