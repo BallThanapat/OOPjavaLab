@@ -1,5 +1,5 @@
 public class Car extends Vehicle {
-    Vehicle c1 = new Vehicle();
+    Vehicle x1 = new Vehicle();
     Car v1 = new Car();
     private String typeEngine;
     public void setTypeEngine(String t){
@@ -10,16 +10,20 @@ public class Car extends Vehicle {
     }
     public void showCarInfo(){
         System.out.print("Car engine is "+typeEngine+".");
-        System.out.println(c1.showInfo(c2));
+        x1.showInfo();
     }
     public void setCarInfo (int s, String t, String y){
-        c1.setFuel(s);
-        c1.setTopSpeed(t);
+        x1.setFuel(s);
+        x1.setTopSpeed(t);
         v1.setTypeEngine(y);
     }
     public void move(){
-        System.out.println("Move.");
-        c1.setFuel(-50);
+        if(x1.getFuel()-50>=0){
+            System.out.println("Move.");
+            
+        }else{
+            System.out.println("Please add fuel.");
+        }
     }
     
 }
