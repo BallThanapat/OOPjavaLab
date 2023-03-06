@@ -1,4 +1,5 @@
 public class SeniorProgrammer extends Programmer {
+    @Override
     public void coding(String str){
         if(getEnergy()>=10){
             System.out.println("I'm coding about "+str);
@@ -24,11 +25,12 @@ public class SeniorProgrammer extends Programmer {
         }
     }
     public void compliment(Programmer p){
-        setHappiness(p.getHappiness()+20);
+        p.setHappiness(p.getHappiness()+20);
         System.out.println(p.getName()+" in a good mood");
     }
     public void blame(Programmer p){
-        setHappiness(p.getHappiness()-20);
+        p.setHappiness(p.getHappiness()-20);
         System.out.println(p.getName()+" in a bad mood");
     }
 }
+
