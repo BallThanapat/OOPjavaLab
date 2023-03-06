@@ -6,8 +6,9 @@ public class Employee {
     public boolean equals(Employee e){
         return (name.equals(e.name));
     }
+    @Override
     public String toString(){
-        return "My naem is "+name+" \nI have "+energy+" energy left.\nI have a balance of "+wallet.getBalance()+" baht.";
+        return "My name is "+name+"."+" \nI have "+energy+" energy left.\nI have a balance of "+wallet.getBalance()+" baht.";
     }
     public boolean buyFood(Seller s){
         if(s.sell(this)!= null){
@@ -47,10 +48,3 @@ public class Employee {
     }
 }
 
-    public String getNationality(){
-        
-    }
-    public void setNationality(String nationality){
-        
-    }
-}
